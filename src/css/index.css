@@ -1,0 +1,348 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../icons/fonts/icomoon.eot?7v7k3j');
+    src:  url('../icons/fonts/icomoon.eot?7v7k3j#iefix') format('embedded-opentype'),
+      url('../icons/fonts/icomoon.ttf?7v7k3j') format('truetype'),
+      url('../icons/fonts/icomoon.woff?7v7k3j') format('woff'),
+      url('../icons/fonts/icomoon.svg?7v7k3j#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-tiktok:before {
+    content: "\e901";
+  }
+  .icon-facebook:before {
+    content: "\e902";
+  }
+  .icon-instagram:before {
+    content: "\e900";
+  }
+  
+
+body {
+    margin: 0;
+    
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; */
+    /* perspective: 200px; */
+    /* background-color: #FCB4DC; */
+    /* background-color: #FC5C9C; */
+    /* background-color: #FC6BB3;  */
+    /* background-image: url(./icons/memphis-mini-dark.png); */
+    background-image: url(../icons/assets/memphis-mini-dark.png);
+    /* background-color: black; */
+    /* background-image: url(./icons/country-quilt-dark.png); */
+    /* background-color: black; */
+    /* background-image: url(./icons/what-the-hex-dark.png); */
+    
+}
+
+
+/* lanzamient0 */
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.clock {
+    position: absolute;
+    top: 10%;
+    border: 1px solid #FC5C9C;
+    border-radius: 5px;
+    padding: .3em;
+    background-color: #FC5C9C;
+    background: rgba(0, 0, 0, .1);
+    
+}
+.container-string {
+    color: white;
+    font-size: 1.3em;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.segundos {
+    color: #FC5C9C;
+}
+.lanzamiento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+/* img {
+    width: 200px;
+    position: absolute;
+    top: 10%;
+    right: 50%;
+    transform: translateX(50%);
+    
+} */
+.dorama {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6.25em;
+    height: 6.25em;
+    
+    /* transition: 5s; */
+    position: relative;
+    /* background: green; */
+    transform: scale(2);
+    animation-name: dorama;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in; 
+    /* animation-delay: 2s; */
+    text-transform: uppercase;
+    color: #f9fcfb;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    
+}
+@keyframes dorama {
+    0% {
+        opacity: 0;
+        transform: rotate(0deg) scale(0);
+        
+    }
+    /* 30% {
+        opacity: 1;
+        transform: rotate(360deg) scale(2);
+    }
+
+    80% {
+        opacity: 1;
+        transform: rotate(360deg) scale(2);
+    }  */
+    100% {
+        opacity: 1;
+        transform: rotate(360deg) scale(2);
+    }
+
+}
+.title {
+    animation-name: title;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.18,1.95,.81,-0.21);
+}
+@keyframes title {
+    0% {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.title h1 {
+    font-size: 3em;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #FC5C9C;
+}
+/* LOGOS */
+.logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+    
+}
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0;
+    background: rgba(0, 0, 0, .2);
+
+}
+.footer h2 {
+    margin: 0;
+    font-size: .9em;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #FC5C9C;
+    letter-spacing: .1em;
+}
+.footer h3 {
+    margin: 0;
+    font-size: .8em;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #FC5C9C;
+    letter-spacing: .1em;
+}
+.footer h2 strong {
+    text-transform: uppercase;
+    color: white;
+} 
+.footer h3 strong {
+    color: whitesmoke;
+}
+.social {
+    padding: .8em;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: white;
+  
+    
+}
+.social:hover {
+    color: #FC5C9C;
+}
+
+@media screen and (min-width: 1200px) {
+
+ }
+@media screen and (max-width: 1023px) {
+    .social {
+        padding: .8em;
+        font-size: 1em;
+
+    }
+    .footer h2 {
+        margin: 0;
+        font-size: .8em;
+    
+    }
+    .footer h3 {
+        margin: 0;
+        font-size: .7em;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .dorama {
+        transform: scale(1.5);
+        animation-name: dorama;
+        width: 3em;
+        height: 3em;
+    }
+    .title h1 {
+        font-size: 2em;
+    }
+    @keyframes dorama {
+        0% {
+            opacity: 1;
+            transform: rotate(0deg) scale(0);
+        }
+        /* 30% {
+            opacity: 1;
+            transform: rotate(360deg) scale(5);
+        }
+
+        80% {
+            opacity: 1;
+            transform: rotate(360deg) scale(5);
+        } */
+        100% {
+            opacity: 1;
+            transform: rotate(360deg) scale(1.5);
+        }
+
+    }
+    .footer h2 {
+        margin: 0;
+        font-size: .7em;
+    
+    }
+    .footer h3 {
+        margin: 0;
+        font-size: .6em;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+    .dorama {
+    transform: scale(1.2);
+    animation-name: dorama;
+    }   
+    
+    .title h1 {
+        font-size: 1.5em;
+    }
+    @keyframes dorama {
+        0% {
+            opacity: 1;
+            transform: rotate(0deg) scale(0);
+        }
+        /* 30% {
+            opacity: 1;
+            transform: rotate(360deg) scale(5);
+        }
+    
+        80% {
+            opacity: 1;
+            transform: rotate(360deg) scale(5);
+        } */
+        100% {
+            opacity: 1;
+            transform: rotate(360deg) scale(1.5);
+        }
+    
+    }
+
+    .logos {
+        flex-direction: row;
+        bottom: 15%;
+        left: 50%;
+        transform: translate(-50%);
+
+    }
+    .footer {
+        text-align: center;
+        height: auto;
+        
+            
+    }
+    .footer h2 strong {
+        /* display: inline-block; */
+        color: white;
+    }
+    .social {
+        font-size: 1.5em;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .logos {
+        /* display: none; */
+        bottom: 15%;
+        
+    }
+
+}
